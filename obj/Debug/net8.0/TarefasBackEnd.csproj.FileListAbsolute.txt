@@ -37,3 +37,4 @@ C:\Desenvolvimento\Estudos_pessoais\Estudos Dotnet\TarefasBackEnd\obj\Debug\net8
 C:\Desenvolvimento\Estudos_pessoais\Estudos Dotnet\TarefasBackEnd\obj\Debug\net8.0\TarefasBackEnd.pdb
 C:\Desenvolvimento\Estudos_pessoais\Estudos Dotnet\TarefasBackEnd\obj\Debug\net8.0\TarefasBackEnd.genruntimeconfig.cache
 C:\Desenvolvimento\Estudos_pessoais\Estudos Dotnet\TarefasBackEnd\obj\Debug\net8.0\ref\TarefasBackEnd.dll
+C:\Desenvolvimento\Estudos_pessoais\Estudos Dotnet\TarefasBackEnd\obj\Debug\net8.0\TarefasBackEnd.sourcelink.json
