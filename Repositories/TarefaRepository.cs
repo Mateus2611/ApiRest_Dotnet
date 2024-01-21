@@ -46,11 +46,14 @@ namespace TarefasBackEnd.Repositories
         {
             var _tarefa = _context.Tarefas.Find(id);
 
-            _tarefa.Nome = tarefa.Nome;
-            _tarefa.Concluida = tarefa.Concluida;   
+            if (_tarefa != null)
+            {
+                _tarefa.Nome = tarefa.Nome;
+                _tarefa.Concluida = tarefa.Concluida;
 
-            _context.Entry(tarefa).State = EntityState.Modified;
-            _context.SaveChanges();
+                _context.Entry(_tarefa).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
         }
     }
 }

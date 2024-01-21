@@ -40,7 +40,7 @@ namespace TarefasBackEnd.Controllers
         public IActionResult Delete( string id, [FromServices]ITarefaRepository repository)
         {
             repository.Delete(new Guid(id));
-            
+             
             return Ok();
         }
     } 
