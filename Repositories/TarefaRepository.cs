@@ -5,10 +5,10 @@ namespace TarefasBackEnd.Repositories
 {
     public interface ITarefaRepository
     {
-        List<Tarefa> Read();
         void Create(Tarefa tarefa);
-        void Delete(Guid id);
+        List<Tarefa> Read();
         void Update(Guid id, Tarefa tarefa);
+        void Delete(Guid id);
     }
 
     public class TarefaRepository : ITarefaRepository
