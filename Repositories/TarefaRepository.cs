@@ -6,7 +6,7 @@ namespace TarefasBackEnd.Repositories
     public interface ITarefaRepository
     {
         void Create(Tarefa tarefa);
-        List<Tarefa> Read();
+        List<Tarefa> Read(Guid id);
         void Update(Guid id, Tarefa tarefa);
         void Delete(Guid id);
     }
@@ -37,9 +37,9 @@ namespace TarefasBackEnd.Repositories
             }
         }
 
-        public List<Tarefa> Read()
+        public List<Tarefa> Read(Guid id)
         {
-            return _context.Tarefas.ToList();
+            return _context.Tarefas.Where(tarefas => tarefas.IdUsuario == id).ToList();
         }
 
         public void Update(Guid id, Tarefa tarefa)
